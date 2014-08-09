@@ -2,7 +2,9 @@
 # define CHIP8_H_
 
 # include <stdlib.h>
-# include <stdint.h>
+# include <stdio.h>
+# include <stdint.h> // if using uintx_t types
+# include <stdbool.h>
 
 # define MEM_SIZE 4096
 # define VX_SIZE 16
@@ -38,5 +40,14 @@ unsigned short stack[STACK_SIZE];
 unsigned short sp;
 
 unsigned char key[KEY_SIZE];
+
+bool is_drawing;
+
+// Function headers
+
+void initialize();
+void load_program(char* path);
+void cycle();
+void draw();
 
 #endif // !CHIP_8_
