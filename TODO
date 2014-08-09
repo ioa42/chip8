@@ -1,1 +1,2 @@
-Instructions and program reader
+Instructions :
+	ADD Vx, Vy - Set Vf flag to 1 if there is a carry (8 bit addition)	

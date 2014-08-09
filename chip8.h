@@ -13,7 +13,7 @@
 /*
  *  The 4Kio of RAM
  *  0x0 - 0x1FF is reserved for the original emulator
- *  Usually, programs begins at 0x200 (others at 0x600)
+ *  Usually, the program begins at 0x200 (others at 0x600)
  */
 
 unsigned char mem[MEM_SIZE];
@@ -27,7 +27,7 @@ unsigned short opcode;
 
 unsigned char Vx[VX_SIZE];
 unsigned short I;
-unsigned short cp;
+unsigned short pc;
 
 unsigned char gfx[GFX_SIZE];
 
